@@ -9,16 +9,16 @@ const Header = () => {
           <Link href="/" className="text-gray-700 hover:text-orange-600">
             Home
           </Link>
-          <Link href="/classes" className="text-gray-700 hover:text-orange-600">
+          <Link href="/Classes" className="text-gray-700 hover:text-orange-600">
             Classes
           </Link>
-          <Link href="/recipes" className="text-gray-700 hover:text-orange-600">
+          <Link href="/Recipes" className="text-gray-700 hover:text-orange-600">
             Recipes
           </Link>
-          <Link href="/about" className="text-gray-700 hover:text-orange-600">
+          <Link href="/About" className="text-gray-700 hover:text-orange-600">
             About
           </Link>
-          <Link href="/contact" className="text-gray-700 hover:text-orange-600">
+          <Link href="/Contact" className="text-gray-700 hover:text-orange-600">
             Contact
           </Link>
         </nav>
