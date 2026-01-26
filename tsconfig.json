@@ -29,9 +29,9 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts",
-    "src/app/Classes",
-    "src/app/templates",
-    "src/app/Recipes"
+    "src/app/(client-section)/Classes",
+    "src/app/(client-section)/components/templates",
+    "src/app/(client-section)/Recipes"
   ],
   "exclude": ["node_modules"]
 }

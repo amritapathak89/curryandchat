@@ -1,4 +1,5 @@
 // app/page.tsx
+import Link from 'next/link';
 import React from "react";
 
 const HomePage = () => {
@@ -10,12 +11,12 @@ const HomePage = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-orange-600 mb-4">Curry & Chat</h1>
           <p className="text-lg md:text-xl text-gray-700 mb-8">Cook delicious Indian meals & improve your English!</p>
           <div className="flex justify-center gap-4">
-            <button className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition">
+            <Link href="/Classes" className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition">
               Join a Class
-            </button>
-            <button className="bg-white border border-orange-500 px-6 py-3 rounded-lg hover:bg-orange-50 transition">
+            </Link>
+            <Link  href="/About" className="bg-white border border-orange-500 px-6 py-3 rounded-lg hover:bg-orange-50 transition">
               Learn More
-            </button>
+            </Link>
           </div>
         </div>
       </section>
