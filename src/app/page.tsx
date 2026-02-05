@@ -14,7 +14,7 @@ const HomePage = () => {
             <Link href="/Classes" className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition">
               Join a Class
             </Link>
-            <Link  href="/About" className="bg-white border border-orange-500 px-6 py-3 rounded-lg hover:bg-orange-50 transition">
+            <Link  href="/About" className="border-2 bg-white border-orange-500 px-6 py-3 rounded-lg hover:bg-orange-50 transition">
               Learn More
             </Link>
           </div>
