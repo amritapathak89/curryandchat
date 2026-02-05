@@ -1,6 +1,6 @@
 "use client";
-import React from "react";
-import ContactForm from "../components/molecules/ContactForm";
+
+import ContactForm from "@/app/(client-section)/components/molecules/ContactForm";
 
 const Contact = () => {
   return (

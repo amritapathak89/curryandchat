@@ -1,4 +1,6 @@
+"use client";
 import React, { useState } from 'react';
+
 interface FormValues {
   name: string;
   email: string;
@@ -14,11 +16,27 @@ const ContactForm: React.FC = () => {
     setFormValues((prevValues) => ({ ...prevValues, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setMessages(`Thank you, ${formValues.name}! We will contact you at ${formValues.email}.`);
-    setFormValues({ name: "", email: "", message: "" }); // Reset the form
+    console.log("Submitting form:", formValues);
+      try {
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formValues),
+        });
+        console.log("Fetch response status:", res.status);
+        if (!res.ok) {
+          throw new Error("Failed to submit");
+        }
+        setMessages(`Thank you, ${formValues.name}! We will contact you at ${formValues.email}.`);
+        setFormValues({ name: "", email: "", message: "" }); // Reset the form
+        setTimeout(() => setMessages(""), 5000); // clear the messages
+      } catch (error) {
+        setMessages("sorry something went wrong");
+      }
   };
+
   return (
     <form onSubmit={handleSubmit}  className="bg-white p-6 rounded-lg shadow-lg flex flex-col gap-4">
       <div className="flex flex-col gap-3">
@@ -56,6 +74,7 @@ const ContactForm: React.FC = () => {
             Message:
           </label>
           <input
+            type="text"
             id="message"
             name="message"
             value={formValues.message}
