@@ -24,17 +24,41 @@ const Recipes = () => {
             <span className="text-gray-400">Image preview</span>
           </div>
           <div className="space-y-6">
-            <h2 className="text-2xl text-orange-500 font-medium">Starters</h2>
+            <h2 className="text-2xl text-orange-500 font-medium">Non-Vegetarian Starters</h2>
             <div>
               <h3 className="font-semibold text-black">Chicken Tikka</h3>
               <p className="text-sm text-black">(Chicken, yogurt, ginger, garlic, spices)</p>
               <p className="text-sm text-gray-700">Spice level: 🌶️🌶️</p>
             </div>
-
             <div>
-              <h3 className="font-semibold text-black">Paneer Tikka</h3>
-              <p className="text-sm text-black">(Paneer cheese, yogurt, spices)</p>
-              <p className="text-sm text-gray-700">Spice level: 🌶️🌶️</p>
+              <h3 className="font-semibold text-black">Lamb Chops</h3>
+              <p className="text-sm text-black">(Lamb, garlic, herbs, spices)</p>
+              <p className="text-sm text-gray-700">Spice level: 🌶️🌶️🌶️ (Medium–Hot)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-black">Chicken Cutlets</h3>
+              <p className="text-sm text-black">(Chicken, onions, spices, pastry)</p>
+              <p className="text-sm text-gray-700">Spice level: 🌶️ (Mild)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-black">Chicken Samosas</h3>
+              <p className="text-sm text-black">(Minced meat, potatoes, spices)</p>
+              <p className="text-sm text-gray-700">Spice level: 🌶️🌶️ (Medium)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-black">Meat Chops</h3>
+              <p className="text-sm text-black">(Chicken, potatoes, breadcrumbs, spices)</p>
+              <p className="text-sm text-gray-700">Spice level: 🌶️🌶️ (Medium)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-black">Tuna Cutlets</h3>
+              <p className="text-sm text-black">(Tuna, potatoes, herbs, spices)</p>
+              <p className="text-sm text-gray-700">Spice level: 🌶️🌶️ (Medium)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-black">Fish Fry</h3>
+              <p className="text-sm text-black">(Salmon,  spices)</p>
+              <p className="text-sm text-gray-700">Spice level: 🌶️🌶️ (Medium)</p>
             </div>
           </div>
           <div className="space-y-6">
